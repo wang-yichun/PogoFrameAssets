@@ -55,5 +55,5 @@ Thumbs.db.meta
 # ================= #
 ~$*
 
-AssetBundles/
-Assets/StreamingAssets/
+/AssetBundles
+/Assets/StreamingAssets
