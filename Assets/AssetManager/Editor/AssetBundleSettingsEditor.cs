@@ -3,6 +3,8 @@
 	using UnityEngine;
 	using UnityEditor;
 	using UnityEditorInternal;
+	using AssetBundles;
+	using System.IO;
 
 	[CustomEditor (typeof(AssetBundleSettings))]
 	public class AssetBundleSettingsEditor : Editor
@@ -68,14 +70,23 @@
 
 			foreach (var targetPath in settings.targetPaths) {
 				if (targetPath.enable) {
-					BuildPipeline.BuildAssetBundles (targetPath.targetPath);
+//					BuildPipeline.BuildAssetBundles (targetPath.targetPath);
+
+					// Choose the output path according to the build target.
+					string outputPath = Path.Combine (targetPath.targetPath, Utility.GetPlatformName ());
+					if (!Directory.Exists (outputPath))
+						Directory.CreateDirectory (outputPath);
+
+					//@TODO: use append hash... (Make sure pipeline works correctly with it.)
+					BuildPipeline.BuildAssetBundles (outputPath, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
+
 				}
 			}
 		}
 
 		void GetNames ()
 		{
-			var names = AssetDatabase.GetAllAssetBundleNames();
+			var names = AssetDatabase.GetAllAssetBundleNames ();
 			foreach (var name in names)
 				Debug.Log ("AssetBundle: " + name);
 		}
