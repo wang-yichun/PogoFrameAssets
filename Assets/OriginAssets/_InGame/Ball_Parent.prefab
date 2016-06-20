@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11416926}
   m_Layer: 0
   m_Name: Ball_Parent
-  m_TagString: Ball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,15 +92,7 @@ MonoBehaviour:
     - LIIF: 1104978400
       InstanceTarget: {fileID: 21228894}
   Modifications:
-    Modificated:
-    - Object: {fileID: 124286}
-      ObjeckLink: -2038960660
-      PropertyPath: m_Name
-      Mode: 0
-    - Object: {fileID: 431726}
-      ObjeckLink: 961792833
-      PropertyPath: m_RootOrder
-      Mode: 0
+    Modificated: []
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 

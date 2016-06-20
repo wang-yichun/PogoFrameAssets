@@ -12,9 +12,9 @@ GameObject:
   - 58: {fileID: 5866242}
   - 50: {fileID: 5064692}
   - 114: {fileID: 11473972}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ball_Red_Child
-  m_TagString: Ball
+  m_TagString: RedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,15 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 109344}
       ObjeckLink: -2038960660
+      PropertyPath: m_Layer
+      Mode: 0
+    - Object: {fileID: 109344}
+      ObjeckLink: -2038960660
       PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 109344}
+      ObjeckLink: -2038960660
+      PropertyPath: m_TagString
       Mode: 0
     - Object: {fileID: 427410}
       ObjeckLink: 961792833
