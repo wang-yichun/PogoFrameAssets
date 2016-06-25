@@ -11,8 +11,7 @@ GameObject:
   - 212: {fileID: 21210582}
   - 58: {fileID: 5897852}
   - 50: {fileID: 5013370}
-  - 250: {fileID: 25043592}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Magnet_Scope
   m_TagString: FinishingMagnetScope
   m_Icon: {fileID: 0}
@@ -107,7 +106,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.6566666
@@ -176,17 +175,11 @@ MonoBehaviour:
       InstanceTarget: {fileID: 21210582}
     - LIIF: -51703734
       InstanceTarget: {fileID: 21273830}
-    - LIIF: 1699288986
-      InstanceTarget: {fileID: 25043592}
   Modifications:
     Modificated:
     - Object: {fileID: 186162}
       ObjeckLink: -696054010
       PropertyPath: m_Name
-      Mode: 0
-    - Object: {fileID: 164060}
-      ObjeckLink: 913085842
-      PropertyPath: m_TagString
       Mode: 0
     - Object: {fileID: 488470}
       ObjeckLink: -2078471145
@@ -314,25 +307,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!250 &25043592
-PointEffector2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164060}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ForceMagnitude: -4
-  m_ForceVariation: 0
-  m_DistanceScale: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_ForceSource: 0
-  m_ForceTarget: 0
-  m_ForceMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

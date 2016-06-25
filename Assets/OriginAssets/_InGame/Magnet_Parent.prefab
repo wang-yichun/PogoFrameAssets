@@ -30,10 +30,9 @@ GameObject:
   - 212: {fileID: 21227134}
   - 58: {fileID: 5860836}
   - 50: {fileID: 5051034}
-  - 250: {fileID: 25014628}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Magnet_Scope
-  m_TagString: Untagged
+  m_TagString: FinishingMagnetScope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +106,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.6566666
@@ -176,10 +175,16 @@ MonoBehaviour:
       InstanceTarget: {fileID: 21227134}
     - LIIF: -51703734
       InstanceTarget: {fileID: 21286592}
-    - LIIF: 1699288986
-      InstanceTarget: {fileID: 25014628}
   Modifications:
     Modificated:
+    - Object: {fileID: 191250}
+      ObjeckLink: 913085842
+      PropertyPath: m_Layer
+      Mode: 0
+    - Object: {fileID: 191250}
+      ObjeckLink: 913085842
+      PropertyPath: m_TagString
+      Mode: 0
     - Object: {fileID: 432738}
       ObjeckLink: -2078471145
       PropertyPath: m_RootOrder
@@ -189,10 +194,8 @@ MonoBehaviour:
       PropertyPath: m_UsedByEffector
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 25014628}
-      parent: {fileID: 191250}
-    RemovedObjects: 
+    NonPrefabComponents: []
+    RemovedObjects: 9a174965
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: a4e8b2e6de1b7477d88ee32c3332a8fb
@@ -256,25 +259,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!250 &25014628
-PointEffector2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191250}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ForceMagnitude: -4
-  m_ForceVariation: 0
-  m_DistanceScale: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_ForceSource: 0
-  m_ForceTarget: 0
-  m_ForceMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
